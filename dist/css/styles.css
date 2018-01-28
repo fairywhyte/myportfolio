@@ -5605,6 +5605,9 @@ div.jumbotron.jumbotron-fluid {
 section.section-main .container-fluid .jumbotron.jumbotron-fluid .container span {
   color: #3faf9d; }
 
+section.section-main .container-fluid .jumbotron.jumbotron-fluid .container p span {
+  color: #3faf9d; }
+
 @media screen and (max-width: 768px) {
   .jumbotron {
     padding-top: 20px;
@@ -5664,7 +5667,7 @@ div.col-md h2 {
   font-family: 'Andada', sans-serif; }
 
 .section-skill td .bar {
-  border: #3faf9d solid 1px; }
+  border-bottom: #3faf9d solid 1px; }
 
 /*-------portfolio----*/
 .portfolio {
@@ -5720,7 +5723,7 @@ div.about-image {
   background-color: #fff;
   color: #575757;
   font-weight: bold;
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 /*-------Contact-----*/
 .contactme {
@@ -5732,8 +5735,10 @@ div.about-image {
 .contactme h2 {
   font-size: 2rem;
   color: #d6d6d6;
-  text-align: center;
-  padding-top: 40px;
+  text-align: center; }
+
+.contactme.container.findme a {
+  display: block;
   padding-bottom: 40px; }
 
 /*  Contact form
@@ -5800,10 +5805,11 @@ div.about-image {
 .form-group button {
   background: #232323;
   color: #fff;
-  font-weight: 300;
   padding-top: 40px;
   margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1rem; }
 
 .form-label-required::after {
   content: '*'; }
@@ -5814,7 +5820,7 @@ div.about-image {
   padding: 70px 0px; }
 
 .footer p {
-  color: blue;
+  color: #3faf9d;
   text-align: center;
   font-size: 16px; }
 
