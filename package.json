@@ -1,0 +1,28 @@
+{
+  "name": "my-bootstrap-portfolio",
+  "version": "1.0.0",
+  "description": "A simple blog to learn how to use github.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fairywhyte/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fairywhyte/blog/issues"
+  },
+  "homepage": "https://github.com/fairywhyte/blog#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.3",
+    "del": "^3.0.0",
+    "sass": "^1.0.0-beta.4"
+  }
+}
