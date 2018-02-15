@@ -6,46 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+
     <title>My Portfolio</title>
 </head>
 
 <body>
-    <a href="#content" class="accessible-hidden">Skip to content</a>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
     <!--Header-->
-    <header>
-        <!--Navbar-->
-        <nav role="navigation" class="navbar navbar-expand navbar-dark bg-dark">
-            <a href="index.html" class="logo-link">
-                <img src="img/fwicon.jpg" class="favicon" alt="" width="32">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--<a href="index.html">-->
+            <a class="navbar-brand" href="/">
+                <img src="img/icon.png" width="60" height="60" alt="" alt="My portfolio">
             </a>
-            <div class="container-fluid">
-                <div class="navbar-brand" href="#home">
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <a class="nav-item nav-link active" href="#home">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                        <a class="nav-item nav-link" href="#skills">Skills</a>
-                        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-                        <a class="nav-item nav-link" href="#aboutme">About</a>
-                        <a class="nav-item nav-link" href="#contact">Contact</a>
-                    </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-brand collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-
         <!--INTRO-->
         <main id="content">
             <section class="section section-main">
                 <div class="container-fluid">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h2>Hello, I am
-                                <span>Fadzilah Whyte</span>.</h2>
-                            <p>
-                                I am a <span>Full-Stack </span>Web Developer.
+                            <h1 class="display-4">Hi, I am
+                                <a href="mailto:fadzilah.whyte@aol.co.uk">Fadzilah Whyte.</a>
+                            </h1>
+                            <p class="lead">
+                                I am a Full-Stack Web Developer.
                             </p>
                         </div>
                     </div>
@@ -67,142 +82,124 @@
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <h2>Discover</h2>
-                    <p>Tell me about your project and we brainstorm together the features to creat a plan for your product to
-                        launch.
-                    </p>
+                    <article>
+                        <h2>Discover</h2>
+                        <p>Tell me about your project and we brainstorm together the features to creat a plan for your product
+                            to launch.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md">
+                    <article>
+                        <h2>Design</h2>
+                        <p>We design the wireframe and agree together how to create the best experience for your users to present
+                            your brand.
+                        </p>
+                    </article>
                 </div>
                 <div class="col-md">
-                    <h2>Design</h2>
-                    <p>We design the wireframe and agree together how to create the best experience for your users to present
-                        your brand.
-                    </p>
+                    <article>
+                        <h2>Deploy</h2>
+                        <p>We prototype and develop your product. We work together intensily to incorporate your feedback.</p>
+                    </article>
                 </div>
                 <div class="col-md">
-                    <h2>Deploy</h2>
-                    <p>We prototype and develop your product. We work together intensily to incorporate your feedback.</p>
-                </div>
-                <div class="col-md">
-                    <h2>Be Ready</h2>
-                    <p>We deploy your product and now your website is ready to get the traction. Get out there and grow your
-                        audience.
-                    </p>
+                    <article>
+                        <h2>Be Ready</h2>
+                        <p>We deploy your product and now your website is ready to get the traction. Get out there and grow
+                            your audience.
+                        </p>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
     <!--section PROMO ends here-->
 
+
     <!--SKILLS-->
     <section id="skills" class="section-skills">
         <h2>My Skills</h2>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">HTML</td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td class="bar" align="left" bgcolor="#575757" width="80%"> </td>
-                            <td align="left">80%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">CSS,Sass </td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td align="left" bgcolor="#575757" width="80%"> </td>
-                            <td align="left">80%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">JavaScript</td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td align="left" bgcolor="#575757" width="40%"> </td>
-                            <td align="left">40%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">React </td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td align="left" bgcolor="#575757" width="60%"> </td>
-                            <td align="left">60%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">PHP</td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td align="left" bgcolor="#575757" width="30%"> </td>
-                            <td align="left">30%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">Laravel</td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td align="left" bgcolor="#575757" width="30%"> </td>
-                            <td align="left">30%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">UX </td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td align="left" bgcolor="#575757" width="60%"> </td>
-                            <td align="left">60%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <table border="0" width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td align="center" width="20%">JQuery</td>
-                <td align="center" width="75%">
-                    <table border="0" width="100%" cellpadding="1" cellspacing="1">
-                        <tr>
-                            <td align="left" bgcolor="#575757" width="80%"></td>
-                            <td align="left">80%</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+        <div class="container">
+            <div class="row">
+                <div class="progbar">
+                    <div class="progress-label">80%</div>
+                    <div class="myprogress col-9"></div>
+                    <div class="barspace">
+                        <div class="progress-label skill-name">HTML</div>
+                        <div id="bar1" class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="progbar">
+                    <div class="progress-label">80%</div>
+                    <div class="myprogress col-9"></div>
+                    <div class="barspace">
+                        <div class="progress-label skill-name">CSS & Sass</div>
+                        <div id="bar2" class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="progbar">
+                    <div class="progress-label">60%</div>
+                    <div class="myprogress col-9"></div>
+                    <div class="barspace">
+                        <div class="progress-label skill-name">JavaScript</div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="progbar">
+                    <div class="progress-label">40%</div>
+                    <div class="myprogress col-9"></div>
+                    <div class="barspace">
+                        <div class="progress-label skill-name">PHP</div>
+                        <div id="bar4" class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="progbar">
+                    <div class="progress-label">40%</div>
+                    <div class="myprogress col-9"></div>
+                    <div class="barspace">
+                        <div class="progress-label skill-name">Laravel</div>
+                        <div id="bar5" class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="progbar">
+                    <div class="progress-label">80%</div>
+                    <div class="myprogress col-9"></div>
+                    <div class="barspace">
+                        <div class="progress-label skill-name">MySQL</div>
+                        <div id="bar6" class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/progbar.js"></script>
+    <script>
+  $('.progbar').appear();
 
+function progress(barID, value) {
+    $(barID).animate({
+        'width': value
+    }, 300);
+}
 
+$('.progbar').on('appear', function () {
+    progress('#bar1', '50%');
+    progress('#bar2', '60%');
+    progress('#bar3', '90%');
+    progress('#bar4', '50%');
+    progress('#bar5', '50%');
+    progress('#bar6', '50%');
+});
+    </script>
 
     <!--PORTFOLIO-->
     <div class="portfolio">
@@ -305,12 +302,12 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-6">
                         <article class="card mb-4">
-
                             <img class="card-img-top" src="img/counter.jpg" width="200">
                             <div class="card-body border">
                                 <h3 class="card-title">Explore</h3>
                                 <p class="card-text">Description of your Final Project. Description of your Final Project, including the tech
-                                    stack.</p>
+                                    stack.
+                                </p>
                                 <p>Final Project to Get highlighted.</p>
                                 <h4>
                                     <strong>Tech stack:</strong>
@@ -334,12 +331,11 @@
     <!--ABOUT ME-->
     <div class "container">
         <section id="aboutme" class="about">
-
             <div class="about-image">
                 <h2>About Me</h2>
-                <img src="img/myphoto.jpg" al="It's me Fadz Whyte">
+                <img src="img/myphoto.jpg" class="top" alt="It's me Fadz Whyte">
+                <img src="img/fadz.jpg" class="bottom" alt="It's me Fadz Whyte">
             </div>
-
             <div class="about-text">
                 <p>My name is Fadzilah Whyte.
                     <p>I am a full-stack web developer and enjoy learning new trends. </p>
@@ -353,11 +349,8 @@
                     <strong>Get in touch and let's do something great together.</strong>
                     <br/>
                     <br/>
-
                     <button type="button">Contact Me</button>
-
             </div>
-
         </section>
     </div>
 
@@ -377,30 +370,40 @@
     </div>
     <!--CONTACT ME -->
     <section id="contact" class="contact-form">
+        <h3>
+            <strong>Contact Me</strong>
+        </h3>
         <div class="container">
-            <h3>Contact me</h3>
             <div class="container form">
-                <form action="http://cbp.vosk-design.cz/process-form.php" method="POST" class="form-contact">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="nm" placeholder="First Name" required="" autofocus="">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="lastname" name="lastnm" placeholder="Last Name" required="" autofocus="">
-                    </div>
-                    <div class="form-group form_left">
-                        <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
-                    </div>
+                <form method="post" action="http://cbp.vosk-design.cz/process-form.php" method="POST" class="form-contact">
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
-                            placeholder="Mobile No." required="">
+                        
+                        <input type="text" class="form-control" id="name" name="first_name" value='<?php echo htmlspecialchars($text);?>'
+                        placeholder="First Name" required="" autofocus="">
+                        <?php echo $_POST["first_name"]; ?>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control textarea-contact" rows="5" id="message" name="FB" placeholder="Type Your Message/Feedback here..."
+                        <input type="text" class="form-control" id="lastname" name="last_name" placeholder="Last Name" required="" autofocus="">
+                        <?php echo $_POST["last_name"]; ?>
+                    </div>
+                    <div class="form-group form_left">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
+                        <?php echo $_POST["email"]; ?>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="phone" name="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
+                            placeholder="Mobile No." required="">
+                            <?php echo $_POST["phone"]; ?>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control textarea-contact" rows="8" id="message" name="message" placeholder="Type Your Message/Feedback here..."
                             required=""></textarea>
+                            <?php echo $_POST["message"]; ?>
                         <br>
                         <button class="btn btn-default btn-send">
-                            <span class="glyphicon glyphicon-send"></span> Send </button>
+                            <span class="glyphicon glyphicon-send">Send </span>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -409,75 +412,8 @@
 
     <!--FOOTER-->
     <footer>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
-                    <ul class="adress">
-                        <span>Contact Details:</span>
-                        <li>
-                            <p>Address :</p>
-                            <p>Flat B, 2 Mount Street, AB252RB Aberdeen,Scotland,United Kingdom</p>
-                        </li>
-
-                        <li>
-                            <p>Phone :</p>
-                            <p>+44 7748944663</p>
-                        </li>
-
-                        <li>
-                            <p>Email :</p>
-                            <p>fadzilah.whyte@aol.co.uk</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <ul class="contact">
-                        <span>Content:</span>
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#skills">Skills</a>
-                        </li>
-
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-
-                        <li>
-                            <a href="#aboutme">About </a>
-                        </li>
-
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                    <ul class="social">
-                        <span>Find Me Here :</span>
-                        <li>
-                            <a href="https://github.com/fairywhyte">
-                                <i class="fa fa-github fa-3x"></i>GitHub</a>
-                        </li>
-                        <br/>
-
-                        <li>
-                            <a href="https://www.linkedin.com/in/fadzilahwhyte/">
-                                <i class="fa fa-linkedin fa-3x"></i>LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
         <p>Nice to meet you!</p>
         <p>Copyright @Fadzilah Whyte 2018</p>
-
     </footer>
 </body>
 

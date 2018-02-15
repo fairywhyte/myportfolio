@@ -140,7 +140,7 @@ sup {
 
 a {
   color: #007bff;
-  text-decoration: none;
+  text-decoration: underline;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
@@ -5528,10 +5528,12 @@ html {
   box-sizing: border-box; }
 
 *,
-*:before, *:after {
+*:before,
+*:after {
   box-sizing: inherit; }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Andada', sans-serif;
@@ -5544,7 +5546,7 @@ footer {
 
 footer {
   text-align: center;
-  font-size: 10px;
+  font-size: 1.5rem;
   color: #4db6ac;
   background-color: #575757; }
 
@@ -5567,27 +5569,19 @@ footer {
   width: 32px;
   height: auto; }
 
-.navbar-brand {
-  display: table;
-  width: 100%;
-  margin: 0; }
-
-.nav-item.nav-link a {
-  color: #d6d6d6;
-  float: left;
-  display: table-cell;
-  text-align: center;
-  box-sizing: border-box;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-  /* prevent text wrap in links (about me link)*/ }
+.navbar-brand >
+.navbar-nav >
+.nav-item >
+.nav-link >
+li > a {
+  color: #4db6ac;
+  text-decoration: none; }
 
 nav-item a:hover,
 nav-item a:focus {
   background-color: #575757;
-  color: white; }
+  color: #3faf9d;
+  text-decoration: none; }
 
 div.jumbotron.jumbotron-fluid {
   color: white;
@@ -5595,18 +5589,31 @@ div.jumbotron.jumbotron-fluid {
   padding-right: 1rem;
   padding-bottom: 16vw;
   padding-left: 1rem;
-  background-image: url("../img/mb-amg.jpg");
+  background-image: url("../img/car.jpg");
   width: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-size: 20px; }
+  font-size: 2.5rem;
+  border: 3px solid #4db6ac; }
 
-section.section-main .container-fluid .jumbotron.jumbotron-fluid .container span {
-  color: #3faf9d; }
+.section-main > .container-fluid >
+.jumbotron.jumbotron-fluid >
+.container > .display-4 a {
+  color: #3faf9d;
+  text-decoration: none;
+  text-align: center; }
 
-section.section-main .container-fluid .jumbotron.jumbotron-fluid .container p span {
-  color: #3faf9d; }
+.section-main > .container-fluid >
+.jumbotron.jumbotron-fluid >
+.container > .display-4 a:hover {
+  background: #d6d6d6; }
+
+.section-main > .container-fluid .jumbotron.jumbotron-fluid >
+.container > p {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center; }
 
 @media screen and (max-width: 768px) {
   .jumbotron {
@@ -5614,9 +5621,9 @@ section.section-main .container-fluid .jumbotron.jumbotron-fluid .container p sp
     padding-bottom: 20px; } }
 
 /*  Promo----------*/
-section.container.claim p {
+section > .container > .claim > p {
   color: white;
-  font-size: 22px;
+  font-size: 3.5rem;
   text-align: center; }
 
 section.claim {
@@ -5627,6 +5634,21 @@ section.claim {
 div.col-md h2 {
   background-color: #575757;
   color: white; }
+
+.section-promo article {
+  position: relative;
+  padding-top: 70px;
+  padding-left: 2em;
+  padding-bottom: 2em; }
+  .section-promo article::before {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    transform: translateX(-50%);
+    background-color: #3faf9d;
+    border-radius: 0 0 50% 50%; }
 
 @media only screen and (min-width: 500px) {
   .section-promo.col-md {
@@ -5662,12 +5684,43 @@ div.col-md h2 {
   text-align: center;
   padding: 40px 20px 40px 20px; }
 
-.section-skills table tr td {
-  max-width: 100%;
-  font-family: 'Andada', sans-serif; }
+/*************javascript progressbar***********/
+.myprogress {
+  margin: 0;
+  text-align: center;
+  padding-left: 20px; }
 
-.section-skill td .bar {
-  border-bottom: #3faf9d solid 1px; }
+.progbar {
+  width: 100%;
+  padding: 5px;
+  background-color: #3faf9d;
+  transition: 1.5s ease; }
+
+.bar {
+  width: 0%;
+  height: 2.5rem;
+  background-color: #575757;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.barspace {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #d6d6d6;
+  margin-bottom: 10px; }
+
+.progress-label {
+  position: absolute;
+  right: 250px;
+  font-size: 1rem;
+  margin-top: 10px; }
+
+.skill-name {
+  position: absolute;
+  left: 250px;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #d6d6d6; }
 
 /*-------portfolio----*/
 .portfolio {
@@ -5709,7 +5762,13 @@ div.about-image {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  transition: 0.5s;
+  border: 5px solid #3faf9d;
+  transition: opacity 1s ease-in-out; }
+
+.about-image img.top:hover {
+  opacity: 0; }
 
 .about-text {
   text-align: center;
@@ -5720,10 +5779,11 @@ div.about-image {
   font-size: 1rem; }
 
 .about-text button {
-  background-color: #fff;
+  background-color: #d6d6d6;
   color: #575757;
   font-weight: bold;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border: 1px solid #232323; }
 
 /*-------Contact-----*/
 .contactme {
@@ -5737,7 +5797,7 @@ div.about-image {
   color: #d6d6d6;
   text-align: center; }
 
-.contactme.container.findme a {
+.contactme.container .findme a {
   display: block;
   padding-bottom: 40px; }
 
@@ -5756,7 +5816,8 @@ div.about-image {
   max-width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-size: 20px; }
+  font-size: 2rem;
+  text-align: center; }
 
 .form-contact {
   display: flex;
@@ -5769,8 +5830,7 @@ div.about-image {
 .form-group:not(:last-child) {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  border-bottom: 1px solid #fff; }
+  align-items: center; }
 
 @media only screen and (min-width: 600px) {
   .form-group:not(:last-child) {
@@ -5787,29 +5847,30 @@ div.about-image {
 
 .form-group input {
   flex: 1;
-  background-color: white; }
+  background-color: white;
+  margin: 5px; }
 
 .form-group input:focus {
   background-color: rgba(255, 255, 255, 0.3); }
 
-.form-group textarea,
-.form-group button {
+.form-group textarea {
   display: block;
   width: 100%;
   border-radius: .2em; }
 
 .form-group textarea {
-  margin-top: .25rem;
-  margin-bottom: 1rem; }
+  margin-top: .25rem; }
 
 .form-group button {
   background: #232323;
   color: #fff;
-  padding-top: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
-  font-size: 1rem; }
+  font-size: 1rem;
+  width: 100%;
+  display: block; }
 
 .form-label-required::after {
   content: '*'; }
@@ -5827,7 +5888,9 @@ div.about-image {
 footer ul li {
   padding: 5px 0px; }
 
-.adress span, .contact span, .social span {
+.address span,
+.contact span,
+.social span {
   color: black;
   font-weight: 800;
   padding-bottom: 10px;
@@ -5837,7 +5900,9 @@ footer ul li {
   font-size: 20px;
   letter-spacing: 3px; }
 
-.adress li p, .contact li a, .social li a {
+.address li p,
+.contact li a,
+.social li a {
   color: black;
   letter-spacing: 2px;
   text-decoration: none;
@@ -5846,7 +5911,9 @@ footer ul li {
 .social li {
   float: left; }
 
-.adress, .contact, .social {
+.address,
+.contact,
+.social {
   list-style: none; }
 
 .fa {
