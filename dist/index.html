@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+  rel="stylesheet"  type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -17,65 +20,77 @@
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
     <!--Header-->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!--<a href="index.html">-->
-            <a class="navbar-brand" href="/">
-                <img src="img/icon.png" width="60" height="60" alt="" alt="My portfolio">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="/">
+            <img src="img/icon.png" width="60" height="60" alt="" alt="My portfolio">
+        </a>
 
-            <div class="navbar-brand collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="container">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutme">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-brand collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fas fa-home fa-fw" style="background: #62e5d2"></i>Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            <i class="fas fa-cog" style="background: #62e5d2"></i>Skills</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">
+                            <i class="fas fa-address-card" style="background: #62e5d2"></i>Portfolio</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">
+                            <i class="fas fa-comment-alt" style="background: #62e5d2"></i>About me</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope" style="background:  #62e5d2"></i>Contact</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!--INTRO-->
-        <main id="content">
-            <section class="section section-main">
-                <div class="container-fluid">
-                    <div class="jumbotron jumbotron-fluid">
-                        <div class="container">
-                            <h1 class="display-4">Hi, I am
-                                <a href="mailto:fadzilah.whyte@aol.co.uk">Fadzilah Whyte.</a>
-                            </h1>
-                            <p class="lead">
-                                I am a Full-Stack Web Developer.
-                            </p>
-                        </div>
+        </div>
+    </nav>
+    <!--INTRO-->
+    <main id="content">
+        <section class="section section-main color">
+            <div class="container-fluid">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4 ">Hi, I am
+                            <a href="mailto:fadzilah.whyte@aol.co.uk">Fadzilah Whyte.</a>
+                        </h1>
+                        <p class="lead">
+                            I am a Full-Stack Web Developer.
+                        </p>
                     </div>
                 </div>
-            </section>
-    </header>
-    <!--HEADER Ends here-->
+            </div>
+        </section>
+</header>
+        <!--HEADER Ends here-->
 
-    <!--section promo-->
+        <!--section promo-->
     <section class="claim">
         <div class="container">
-            <p>Let’s work together to make your product
-                <strong>stand out</strong>.I create beautiful and functional websites. I work with my clients step by step from the
-                idea until the fully functioning web application.</p>
+            <p>
+                <i class="fas fa-quote-left fa-xs"></i>Let’s work together to make your product
+                <strong>stand out</strong>.I create beautiful and functional websites. I work with my clients step by step from
+                the idea until the fully functioning web application.
+                <i class="fas fa-quote-right fa-xs"></i>
+            </p>
         </div>
     </section>
 
@@ -84,6 +99,9 @@
             <div class="row">
                 <div class="col-md">
                     <article>
+                        <div style="font-size:4em; color: #62e5d2">
+                            <i class="fas fa-crosshairs fa-pulse"></i>
+                        </div>
                         <h2>Discover</h2>
                         <p>Tell me about your project and we brainstorm together the features to creat a plan for your product
                             to launch.
@@ -93,20 +111,29 @@
 
                 <div class="col-md">
                     <article>
+                        <div style="font-size:4em; color: #62e5d2">
+                            <i class="fas fa-spinner fa-pulse"></i>
+                        </div>
                         <h2>Design</h2>
-                        <p>We design the wireframe and agree together how to create the best experience for your users to present
-                            your brand.
+                        <p>We design the wireframe and agree together how to create the best experience for your users to
+                            present your brand.
                         </p>
                     </article>
                 </div>
                 <div class="col-md">
                     <article>
+                        <div style="font-size:4em; color: #62e5d2">
+                            <i class="fas fa-code fa-pulse"></i>
+                        </div>
                         <h2>Deploy</h2>
                         <p>We prototype and develop your product. We work together intensily to incorporate your feedback.</p>
                     </article>
                 </div>
                 <div class="col-md">
                     <article>
+                        <div style="font-size:4em; color: #62e5d2">
+                            <i class="fas fa-cog fa-spin"></i>
+                        </div>
                         <h2>Be Ready</h2>
                         <p>We deploy your product and now your website is ready to get the traction. Get out there and grow
                             your audience.
@@ -116,14 +143,15 @@
             </div>
         </div>
     </section>
-    <!--section PROMO ends here-->
+<!--section PROMO ends here-->
 
 
-    <!--SKILLS-->
+<!--SKILLS-->
     <section id="skills" class="section-skills">
         <h2>My Skills</h2>
         <div class="container">
             <div class="row">
+                <!-- Progressbar for skills -->
                 <div class="progbar">
                     <div class="progress-label">80%</div>
                     <div class="myprogress col-9"></div>
@@ -132,7 +160,6 @@
                         <div id="bar1" class="bar"></div>
                     </div>
                 </div>
-
                 <div class="progbar">
                     <div class="progress-label">80%</div>
                     <div class="myprogress col-9"></div>
@@ -141,7 +168,6 @@
                         <div id="bar2" class="bar"></div>
                     </div>
                 </div>
-
                 <div class="progbar">
                     <div class="progress-label">60%</div>
                     <div class="myprogress col-9"></div>
@@ -150,7 +176,6 @@
                         <div id="bar3" class="bar"></div>
                     </div>
                 </div>
-
                 <div class="progbar">
                     <div class="progress-label">40%</div>
                     <div class="myprogress col-9"></div>
@@ -159,262 +184,270 @@
                         <div id="bar4" class="bar"></div>
                     </div>
                 </div>
-
-                <div class="progbar">
-                    <div class="progress-label">40%</div>
-                    <div class="myprogress col-9"></div>
-                    <div class="barspace">
-                        <div class="progress-label skill-name">Laravel</div>
-                        <div id="bar5" class="bar"></div>
+                    <div class="progbar">
+                        <div class="progress-label">40%</div>
+                        <div class="myprogress col-9"></div>
+                        <div class="barspace">
+                            <div class="progress-label skill-name">Laravel</div>
+                            <div id="bar5" class="bar"></div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="progbar">
-                    <div class="progress-label">80%</div>
-                    <div class="myprogress col-9"></div>
-                    <div class="barspace">
-                        <div class="progress-label skill-name">MySQL</div>
-                        <div id="bar6" class="bar"></div>
+                    <div class="progbar">
+                        <div class="progress-label">80%</div>
+                        <div class="myprogress col-9"></div>
+                        <div class="barspace">
+                            <div class="progress-label skill-name">MySQL</div>
+                            <div id="bar6" class="bar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/progbar.js"></script>
-    <script>
-  $('.progbar').appear();
+    <!-- JS script -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/progbar.js"></script>
+        <script>
+            $('.progbar').appear();
 
-function progress(barID, value) {
-    $(barID).animate({
-        'width': value
-    }, 300);
-}
+            function progress(barID, value) {
+                $(barID).animate({
+                    'width': value
+                }, 300);
+            }
 
-$('.progbar').on('appear', function () {
-    progress('#bar1', '50%');
-    progress('#bar2', '60%');
-    progress('#bar3', '90%');
-    progress('#bar4', '50%');
-    progress('#bar5', '50%');
-    progress('#bar6', '50%');
-});
-    </script>
+            $('.progbar').on('appear', function () {
+                progress('#bar1', '50%');
+                progress('#bar2', '60%');
+                progress('#bar3', '90%');
+                progress('#bar4', '50%');
+                progress('#bar5', '50%');
+                progress('#bar6', '50%');
+            });
+        </script>
 
-    <!--PORTFOLIO-->
-    <div class="portfolio">
-        <section id="portfolio">
-            <div class="container">
-                <h2>My Portfolio</h2>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <article class="card mb-4">
-                            <img class="card-img-top" src="img/counter.jpg" width="200">
-                            <div class="card-body">
-                                <h3 class="card-title">Generic Hipster Coffee</h3>
-                                <p class="card-text">Student Project for the Coding Bootcamp Praha. Coded based on provided psd design.</p>
-                                <h4>
-                                    <strong>Tech stack:</strong>
-                                </h4>
-                                <ul class="unstyled">
-                                    <li class="badge badge-secondary"> HTML</li>
-                                    <li class="badge badge-secondary"> CSS</li>
-                                    <li class="badge badge-secondary"> Javascript</li>
-                                    <li class="badge badge-secondary"> Bootstrap</li>
-                                    <li class="badge badge-secondary"> SCSS</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <article class="card mb-4">
-                            <img class="card-img-top" src="img/counter.jpg" width="200">
-                            <div class="card-body">
-                                <h3 class="card-title">Hackaton Project#2</h3>
-                                <p class="card-text">Description of hackathon project #2.</p>
-                                <h4>Tech stack:</h4>
-                                <ul class="unstyled">
-                                    <li class="badge badge-secondary"> HTML</li>
-                                    <li class="badge badge-secondary"> CSS</li>
-                                    <li class="badge badge-secondary"> Javascript</li>
-                                    <li class="badge badge-secondary"> Bootstrap</li>
-                                    <li class="badge badge-secondary"> SCSS</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <article class="card mb-4">
-                            <img class="card-img-top" src="img/counter.jpg" width="200" height="auto">
-                            <div class="card-body">
-                                <h3 class="card-title">Hackaton Project#3</h3>
-                                <p class="card-text">Description of hackathon project #3.</p>
-                                <h4>
-                                    <strong>Tech stack:</strong>
-                                </h4>
-                                <ul class="unstyled">
-                                    <li class="badge badge-secondary"> HTML</li>
-                                    <li class="badge badge-secondary"> CSS</li>
-                                    <li class="badge badge-secondary"> Javascript</li>
-                                    <li class="badge badge-secondary"> Bootstrap</li>
-                                    <li class="badge badge-secondary"> SCSS</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <article class="card mb-4">
-                            <img class="card-img-top" src="img/counter.jpg" width="200">
-                            <div class="card-body">
-                                <h3 class="card-title">Hackaton Project#4</h3>
-                                <p class="card-text">Description of hackathon project #4.</p>
-                                <h4>
-                                    <strong>Tech stack:</strong>
-                                </h4>
-                                <ul class="unstyled">
-                                    <li class="badge badge-secondary"> HTML</li>
-                                    <li class="badge badge-secondary"> CSS</li>
-                                    <li class="badge badge-secondary"> Javascript</li>
-                                    <li class="badge badge-secondary"> Bootstrap</li>
-                                    <li class="badge badge-secondary"> SCSS</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <article class="card mb-4">
-                            <img class="card-img-top" src="img/counter.jpg" width="200">
-                            <div class="card-body">
-                                <h3 class="card-title">Final Project</h3>
-                                <p class="card-text">Description of the final project.</p>
-                                <h4>
-                                    <strong>Tech stack:</strong>
-                                </h4>
-                                <ul class="unstyled">
-                                    <li class="badge badge-secondary"> HTML</li>
-                                    <li class="badge badge-secondary"> CSS</li>
-                                    <li class="badge badge-secondary"> Javascript</li>
-                                    <li class="badge badge-secondary"> Bootstrap</li>
-                                    <li class="badge badge-secondary"> SCSS</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-6">
-                        <article class="card mb-4">
-                            <img class="card-img-top" src="img/counter.jpg" width="200">
-                            <div class="card-body border">
-                                <h3 class="card-title">Explore</h3>
-                                <p class="card-text">Description of your Final Project. Description of your Final Project, including the tech
-                                    stack.
-                                </p>
-                                <p>Final Project to Get highlighted.</p>
-                                <h4>
-                                    <strong>Tech stack:</strong>
-                                </h4>
-                                <ul class="unstyled">
-                                    <li class="badge badge-secondary"> HTML</li>
-                                    <li class="badge badge-secondary"> CSS</li>
-                                    <li class="badge badge-secondary"> Javascript</li>
-                                    <li class="badge badge-secondary"> Bootstrap</li>
-                                    <li class="badge badge-secondary"> SCSS</li>
-                                </ul>
-                            </div>
-                        </article>
+        <!--PORTFOLIO-->
+        <div class="portfolio">
+            <section id="portfolio">
+                <div class="container">
+                    <h2>My Portfolio</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-6 swing">
+                            <article class="card mb-4">
+                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <div class="card-body">
+                                    <h3 class="card-title">Generic Hipster Coffee</h3>
+                                    <p class="card-text">Student Project for the Coding Bootcamp Praha. Coded based on provided psd design.</p>
+                                    <h4>
+                                        <strong>Tech stack:</strong>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li class="badge badge-secondary"> HTML</li>
+                                        <li class="badge badge-secondary"> CSS</li>
+                                        <li class="badge badge-secondary"> Javascript</li>
+                                        <li class="badge badge-secondary"> Bootstrap</li>
+                                        <li class="badge badge-secondary"> SCSS</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-6">
+                            <article class="card mb-4">
+                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hackaton Project#2</h3>
+                                    <p class="card-text">Description of hackathon project #2.</p>
+                                    <h4>Tech stack:</h4>
+                                    <ul class="unstyled">
+                                        <li class="badge badge-secondary"> HTML</li>
+                                        <li class="badge badge-secondary"> CSS</li>
+                                        <li class="badge badge-secondary"> Javascript</li>
+                                        <li class="badge badge-secondary"> Bootstrap</li>
+                                        <li class="badge badge-secondary"> SCSS</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-6">
+                            <article class="card mb-4">
+                                <img class="card-img-top" src="img/counter.jpg" width="120" height="auto">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hackaton Project#3</h3>
+                                    <p class="card-text">Description of hackathon project #3.</p>
+                                    <h4>
+                                        <strong>Tech stack:</strong>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li class="badge badge-secondary"> HTML</li>
+                                        <li class="badge badge-secondary"> CSS</li>
+                                        <li class="badge badge-secondary"> Javascript</li>
+                                        <li class="badge badge-secondary"> Bootstrap</li>
+                                        <li class="badge badge-secondary"> SCSS</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-6">
+                            <article class="card mb-4">
+                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <div class="card-body">
+                                    <h3 class="card-title">Hackaton Project#4</h3>
+                                    <p class="card-text">Description of hackathon project #4.</p>
+                                    <h4>
+                                        <strong>Tech stack:</strong>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li class="badge badge-secondary"> HTML</li>
+                                        <li class="badge badge-secondary"> CSS</li>
+                                        <li class="badge badge-secondary"> Javascript</li>
+                                        <li class="badge badge-secondary"> Bootstrap</li>
+                                        <li class="badge badge-secondary"> SCSS</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-6">
+                            <article class="card mb-4">
+                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <div class="card-body">
+                                    <h3 class="card-title">Final Project</h3>
+                                    <p class="card-text">Description of the final project.</p>
+                                    <h4>
+                                        <strong>Tech stack:</strong>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li class="badge badge-secondary"> HTML</li>
+                                        <li class="badge badge-secondary"> CSS</li>
+                                        <li class="badge badge-secondary"> Javascript</li>
+                                        <li class="badge badge-secondary"> Bootstrap</li>
+                                        <li class="badge badge-secondary"> SCSS</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-6">
+                            <article class="card mb-4">
+                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <div class="card-body border">
+                                    <h3 class="card-title">Explore</h3>
+                                    <p class="card-text">Description of your Final Project. Description of your Final Project, including the tech
+                                        stack.
+                                    </p>
+                                    <p>Final Project to Get highlighted.</p>
+                                    <h4>
+                                        <strong>Tech stack:</strong>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li class="badge badge-secondary"> HTML</li>
+                                        <li class="badge badge-secondary"> CSS</li>
+                                        <li class="badge badge-secondary"> Javascript</li>
+                                        <li class="badge badge-secondary"> Bootstrap</li>
+                                        <li class="badge badge-secondary"> SCSS</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-
-
-    <!--ABOUT ME-->
-    <div class "container">
-        <section id="aboutme" class="about">
-            <div class="about-image">
-                <h2>About Me</h2>
-                <img src="img/myphoto.jpg" class="top" alt="It's me Fadz Whyte">
-                <img src="img/fadz.jpg" class="bottom" alt="It's me Fadz Whyte">
-            </div>
-            <div class="about-text">
-                <p>My name is Fadzilah Whyte.
-                    <p>I am a full-stack web developer and enjoy learning new trends. </p>
-                    <p>I am developing user interfaces in JavaScript and React and backend of my projects in PHP and Laravel.</p>
-                    <p>I am open to learning new technologies and enjoy working with people who are as passionate about all
-                        web-related as me.</p>
-                    <p>I have worked for clients all across the world but currently I am based in Aberdeen,Scotland, United
-                        Kingdom.
-                    </p>
-                    <p>I like cats, gaming, and snowboarding. If I do not develop, you can also meet me trekking in the mountains.</p>
-                    <strong>Get in touch and let's do something great together.</strong>
-                    <br/>
-                    <br/>
-                    <button type="button">Contact Me</button>
-            </div>
-        </section>
-    </div>
-
-    <!--CONTACT ON SOCIAL MEDIA-->
-    <div class="contactme">
-        <section id="contact">
-            <div class="container findme">
-                <h2>Find Me Here</h2>
-                <a href="https://www.linkedin.com/in/fadzilahwhyte/" target="_blank">
-                    <i class="fa fa-linkedin-square" style="font-size:60px;color:#3faf9d"></i>
-                </a>
-                <a href="https://github.com/fairywhyte" target="_blank">
-                    <i class="fa fa-github" style="font-size:60px;color:#3faf9d"></i>
-                </a>
-            </div>
-        </section>
-    </div>
-    <!--CONTACT ME -->
-    <section id="contact" class="contact-form">
-        <h3>
-            <strong>Contact Me</strong>
-        </h3>
-        <div class="container">
-            <div class="container form">
-                <form method="post" action="form.php" method="POST" class="form-contact">
-
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="firstname" value=""
-                        placeholder="First Name" required="" autofocus="">
-
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" required="" autofocus="">
-
-                    </div>
-                    <div class="form-group form_left">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
-
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="phone" name="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
-                            placeholder="Mobile No." required="">
-
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control textarea-contact" rows="8" id="message" name="message" placeholder="Type Your Message/Feedback here..."
-                            required=""></textarea>
-
-                        <br>
-                        <button class="btn btn-default btn-send">
-                            <span class="glyphicon glyphicon-send">Send </span>
-                        </button>
-                    </div>
-                </form>
-            </div>
+            </section>
         </div>
-    </section>
 
-    <!--FOOTER-->
-    <footer>
-        <p>Nice to meet you!</p>
-        <p>Copyright @Fadzilah Whyte 2018</p>
-    </footer>
+
+        <!--ABOUT ME-->
+<div class "container">
+    <section id="aboutme" class="about">
+        <div class="about-image">
+            <h2>About Me</h2>
+                <div class="rotate">
+                    <img src="img/myphoto.jpg" alt="It's me Fadz Whyte">
+                </div>
+        </div>
+        <div class="about-text">
+            <p>My name is Fadzilah Whyte.
+            <p>I am a full-stack web developer and enjoy learning new trends. </p>
+            <p>I am developing user interfaces in JavaScript and React and backend of my projects in PHP and Laravel.</p>
+            <p>I am open to learning new technologies and enjoy working with people who are as passionate about
+                all web-related as me.</p>
+            <p>I have worked for clients all across the world but currently I am based in Aberdeen,Scotland, United
+                Kingdom.
+            </p>
+            <p>I like cats, gaming, and snowboarding. If I do not develop, you can also meet me trekking in the
+                mountains.</p>
+            <strong>Get in touch and let's do something great together.</strong>
+            <br/>
+            <br/>
+            <button type="button">Contact Me</button>
+        </div>
+     </section>
+</div>
+
+<!--CONTACT ON SOCIAL MEDIA-->
+<div class="contactme">
+    <section id="contact">
+        <div class="container findme">
+            <i class="fas fa-binoculars fa-2x"></i>
+            <h2>Find Me Here</h2>
+        <span><a href="https://twitter.com/fadzilove/" target="_blank">
+            <i class="fa fa-twitter-square fa-5x"style="color: #62e5d2"></i></a></span>
+        <span>
+            <a href="https://www.linkedin.com/in/fadzilahwhyte/" target="_blank">
+            <i class="fa fa-linkedin-square fa-5x"style="color: #62e5d2"></i></a>
+            </span>
+        <span>
+            <a href="https://github.com/fairywhyte" target="_blank">
+            <i class="fa fa-github fa-5x" style="color: #62e5d2"></i></a>
+        </span>
+    </section>
+</div>
+            <!--CONTACT ME -->
+            <section id="contact" class="contact-form">
+                <h3>
+                    <i class="fas fa-comments"></i>
+                    <strong>Contact Me</strong>
+                </h3>
+                <div class="container">
+                    <div class="container form">
+                        <form method="post" action="form.php" method="post" class="form-contact">
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="firstname" value=" " placeholder="First Name" required autofocus="">
+
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="lastname" name="lastname" value="" placeholder="Last Name" required autofocus="">
+
+                            </div>
+                            <div class="form-group form_left">
+                                <input type="email" class="form-control" id="email" name="email" required>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="phone" name="phone" value="" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                    maxlength="10" placeholder="Mobile No." required>
+
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control textarea-contact" rows="8" id="message" name="message" value="" placeholder="Type Your Message/Feedback here..."
+                                    required></textarea>
+                                <br/>
+                                <button class="btn btn-send">
+                                    <span class="glyphicon glyphicon-send">Send </span>
+                                </button>
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--FOOTER-->
+            <footer>
+                <p>Nice to meet you!</p>
+                <p>Copyright @Fadzilah Whyte 2018</p>
+            </footer>
 </body>
 
 </html>
