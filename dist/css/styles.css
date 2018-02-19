@@ -5753,21 +5753,7 @@ div.col-md p {
 
 .portfolio > .card-img-top img {
   padding: 1px;
-  border: 2px solid #021a40;
-  background-color: #54bd8f;
-  animation: swing ease-in-out 1s infinite alternate;
-  transform-origin: center -20px;
-  float: left;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
-
-.swing:after {
-  transform: rotate(45deg); }
-
-@keyframes swing {
-  0% {
-    transform: rotate(3deg); }
-  100% {
-    transform: rotate(-3deg); } }
+  background-color: #54bd8f; }
 
 /*  About me section
 ******************************************************/
