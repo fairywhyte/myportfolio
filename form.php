@@ -1,13 +1,11 @@
 <?php
- 
+
 $db_host ='localhost';
 $db_username ='root';
 $db_password ='rootroot';
 $db_database ='portfolio';
-
- 
-
 //connect to the database
+var_dump($_POST);
 function db_connect($database)
 {
 global $db_host;
@@ -39,7 +37,6 @@ global $db_database;
 $pdo =db_connect($db_database);
 //prepare the query
 $statement =$pdo->prepare($query);
-   
 
 //execute the query
     if(false === $statement->execute($values))
@@ -48,9 +45,8 @@ $statement =$pdo->prepare($query);
     var_dump($pdo->errorInfo());
     exit();
     }
- 
 }
- 
+
 if (count($_POST) > 0)
 {
 //insert validation function for all the input fields
@@ -59,8 +55,7 @@ $lastname = filter_input(INPUT_POST, 'lastname');
 $email = filter_input(INPUT_POST, 'email',FILTER_VALIDATE_EMAIL);
 $phone= filter_input(INPUT_POST, 'phone', FILTER_VALIDATE_INT);
 $message = filter_input(INPUT_POST, 'message');
-var_dump($_POST);
- var_dump($_POST[$firstname]);
+
     if (!$firstname ||!$lastname|| !$phone || !$email || $message == '')
     {
     header('Location: ?success=no');
@@ -77,7 +72,7 @@ var_dump($_POST);
 
 var_dump($_POST);
     header('Location: ?success=yes');
-  //  header('Location: process-form.php');
-    //exit();
+    //header('Location: process-form.php');
+    exit();
     }
 }

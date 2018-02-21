@@ -1,0 +1,547 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Andada', sans-serif;
+    font-size: 16px;
+}
+
+.section,
+footer {
+    padding: 3vw 6vw;
+    font-family: 'Andada', sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4db6ac;
+    background-color: #575757;
+}
+
+.section {
+    background-color: #575757;
+    color: white;
+}
+
+.section-darkgrey {
+    background-color: #575757;
+}
+
+/*  Header and navigation******************************************************/
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin: 0 1rem;
+}
+
+.logo-link img {
+    width: 32px;
+    height: auto
+}
+
+// .navbar-brand {
+//     display: table;
+//     width: 100%;
+//     margin: 0;
+// }
+.navbar-brand>.navbar-nav>.nav-item>.nav-link >li>a {
+    color: #62e5d2;
+    text-decoration: none;
+}
+
+.navbar-toggler button {
+    color: #62e5d2;
+}
+
+nav-item a:hover,
+nav-item a:focus {
+    background-color: #575757;
+    color: #62e5d2;
+    text-decoration: none;
+}
+
+div.jumbotron.jumbotron-fluid {
+
+    padding-top: 16vw;
+    padding-right: 1rem;
+    padding-bottom: 16vw;
+    padding-left: 1rem; //background-image: url('../img/car.jpg');
+    background-image: url('../img/car.jpg');
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; //background-position-x: center;
+    border: 10px solid #62e5d2;
+    transition:3s;
+}
+div.jumbotron.jumbotron-fluid:hover{
+    border-radius:95%;
+    transition:3s;
+}
+
+.section-main>.container-fluid>
+.jumbotron.jumbotron-fluid>
+.container >h1{
+    color: #d6d6d6;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+}
+.section-main>.container-fluid>
+.jumbotron.jumbotron-fluid>
+.container>.display-4 a {
+    color: #62e5d2;
+    text-decoration: none;
+    text-align: center;
+}
+
+.section-main>.container-fluid>
+.jumbotron.jumbotron-fluid>
+.container>.display-4 a:hover {
+    background: #d6d6d6;
+}
+
+.section-main>.container-fluid .jumbotron.jumbotron-fluid>.container>p {
+    color:#d6d6d6;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/*  Promo----------*/
+
+section.claim {
+    background-color: #d6d6d6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+}
+//lets work together..
+section.claim>
+div.container> p {
+    color: #232323;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.section>.section-darkgrey>
+.section-promo>article>
+div.col-md h2 {
+    background-color: #575757;
+    color: white;
+    font-size: 2rem;
+    padding-top: 5px;
+}
+
+.section>.section-darkgrey>
+.section-promo>article>
+div.col-md p {
+    background-color: #575757;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section>
+.section-darkgrey >
+.section-promo {
+    position: relative;
+    justify-content: space-around;
+    margin: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    .section-promo.col-md {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .section-promo.col-md {
+        width: 25%;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
+
+/*-------------SKILLS----------------*/
+
+.section-skills {
+    background-color: #d6d6d6;
+    color: #232323;
+    font-family: 'Andada', sans-serif;
+    padding-bottom: 40px;
+}
+
+.section-skills h2 {
+    font-family: 'Andada', sans-serif;
+    font-size: 2rem;
+    color: #232323;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 20px 40px 20px;
+}
+
+/*************javascript progressbar***********/
+
+.myprogress {
+    margin: 0;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.progbar {
+    width: 100%;
+    padding: 5px;
+    background-color: #3faf9d;
+    transition: 1.5s ease;
+}
+
+.bar {
+    width: 0%;
+    height: 2.5rem;
+    background-color: #575757;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.barspace {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #d6d6d6;
+    margin-bottom: 10px;
+}
+
+.progress-label {
+    position: absolute;
+    right: 250px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.skill-name {
+    position: absolute;
+    left: 250px;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #d6d6d6;
+}
+
+/*-------portfolio----*/
+
+.portfolio {
+    padding-top: 40px;
+    background-color: #575757;
+}
+
+.portfolio h2 {
+    color: #d6d6d6;
+    font-family: 'Andada', sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.portfolio>.card-img-top img {
+    padding: 1px;
+    background-color: #54bd8f;
+
+}
+
+/*  About me section
+******************************************************/
+
+.about {
+    //padding :40px 100px 30px 90px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin: 0; //margin-top:40px;
+    background-color: #d6d6d6;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Andada';
+    color: #232323;
+    text-align: center;
+}
+
+div.about-image {
+    flex: 1 1 300px;
+    margin-right: 2rem;
+    text-align: center;
+    position: relative;
+
+}
+
+/*photo setting*/
+
+.about>.about-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    border: 5px solid #3faf9d;
+    transition:0.5s;
+}
+.about>.about-image .rotate img:hover
+{    transition:0.5s;
+    transform: scale(1.5);
+}
+.about-text {
+    text-align: center;
+    flex: 1 0 300px;
+    /* image width */
+    max-width: 100%;
+    padding: 0 2rem;
+    font-size: 1rem;
+}
+
+.about-text button {
+    background-color: #d6d6d6;
+    color: #575757;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid #232323;
+}
+
+/*-------Contact-----*/
+
+.contactme {
+    background-color: #575757;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contactme h2 {
+    font-size: 2rem;
+    color: #d6d6d6;
+    text-align: center;
+}
+
+.contactme.container .findme a {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.fa{
+    font-size: 40px;
+}
+/*  Contact form
+******************************************************/
+
+.contact-form {
+    background-color: #d6d6d6;
+    color: black;
+}
+
+.contact-form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.contact-form h3 {
+    max-width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-group:not(:last-child) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .form-group:not(:last-child) {
+        width: 50%;
+    }
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+    padding: .5rem 1rem;
+    border: 0;
+}
+
+.form-group label {
+    margin-right: 1rem;
+}
+
+.form-group input {
+    flex: 1;
+    background-color: white;
+    margin: 5px;
+}
+
+.form-group input:focus {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.form-group textarea,
+    {
+    display: block;
+    width: 100%;
+    border-radius: .2em;
+}
+
+.form-group textarea {
+    margin-top: .25rem;
+}
+
+.form-group button {
+    background: #232323;
+    color: #fff;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+}
+
+.form-label-required::after {
+    content: '*';
+}
+
+/*--------------social media footer-----------*/
+
+.footer {
+    background-color: blue;
+    padding: 70px 0px;
+}
+
+.footer p {
+    color: #3faf9d;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer ul li {
+    padding: 5px 0px;
+}
+
+.address span,
+.contact span,
+.social span {
+    color: black;
+    font-weight: 800;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.address li p,
+.contact li a,
+.social li a {
+    color: black;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.social li {
+    float: left;
+}
+
+.address,
+.contact,
+.social {
+    list-style: none;
+}
+
+.fa {
+    color: blue;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+/*  Utilities
+******************************************************/
+
+.accessible-hidden {
+    position: absolute;
+    top: 0;
+    left: -999px;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+.accessible-hidden:focus {
+    position: fixed;
+    top: 0;
+    left: 0; //background: #fff;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    clip: auto;
+}
+
+/* Only display content to screen readers
+Taken from Bootstrap 4: https://github.com/twbs/bootstrap/blob/v4-dev/scss/mixins/_screen-reader.scss
+See: http://a11yproject.com/posts/how-to-hide-content/
+See: https://hugogiraudel.com/2016/10/13/css-hide-and-seek/
+*/
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
