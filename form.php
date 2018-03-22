@@ -1,4 +1,5 @@
 <?php
+include 'process-form.php';
 
 $db_host ='localhost';
 $db_username ='root';
@@ -72,7 +73,7 @@ $message = filter_input(INPUT_POST, 'message');
 
 var_dump($_POST);
     header('Location: ?success=yes');
-    //header('Location: process-form.php');
+    header('Location: dist/index.html');
     exit();
     }
 }
