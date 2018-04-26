@@ -5544,11 +5544,11 @@ footer {
   font-family: 'Andada', sans-serif; }
 
 .section {
-  background-color: black;
+  background-color: #575757;
   color: white; }
 
 .section-darkgrey {
-  background-color: black; }
+  background-color: #575757; }
 
 /*  Header and navigation******************************************************/
 a {
@@ -5600,7 +5600,7 @@ div.jumbotron.jumbotron-fluid:hover {
 .section-main > .container-fluid >
 .jumbotron.jumbotron-fluid >
 .container > .display-4 a {
-  color: black;
+  color: #fca46e;
   text-decoration: none;
   text-align: center; }
 
@@ -5627,7 +5627,8 @@ section.claim {
   font-size: 1.5rem; }
 
 section.claim div.grow:hover {
-  background: black;
+  background: #575757;
+  color: #fff;
   transform: scale(1.3); }
 
 section.claim >
@@ -5736,7 +5737,7 @@ div.col-md p {
 /*-------portfolio----*/
 .portfolio {
   padding-top: 40px;
-  background-color: black; }
+  background-color: #575757; }
 
 .portfolio h2 {
   color: #d6d6d6;
@@ -5767,13 +5768,16 @@ div.about-image {
   text-align: center;
   position: relative; }
 
+div.about-image h2 {
+  padding-bottom: 2rem; }
+
 /*photo setting*/
 .about > .about-image img {
   border-radius: 50%;
   width: 300px;
   height: auto;
   max-width: 100%;
-  border: 5px solid black;
+  border: 5px solid #575757;
   transition: 1s; }
 
 .about > .about-image >
@@ -5784,7 +5788,7 @@ rotate img:hover {
   text-align: center;
   flex: 1 0 300px;
   max-width: 100%;
-  padding: 0 2rem;
+  padding-right: 3rem;
   font-size: 1rem; }
 
 .about-text button {
@@ -5796,7 +5800,7 @@ rotate img:hover {
 
 /*-------Contact-----*/
 .contactme {
-  background-color: black;
+  background-color: #575757;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px; }
@@ -5817,9 +5821,7 @@ rotate img:hover {
 ******************************************************/
 .contact-form {
   background-color: #d6d6d6;
-  color: black; }
-
-.contact-form {
+  color: black;
   padding-top: 40px;
   padding-bottom: 40px;
   margin: 0; }
