@@ -5543,20 +5543,17 @@ footer {
   padding: 3vw 6vw;
   font-family: 'Andada', sans-serif; }
 
-footer {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #4db6ac;
-  background-color: #575757; }
-
 .section {
-  background-color: #575757;
+  background-color: black;
   color: white; }
 
 .section-darkgrey {
-  background-color: #575757; }
+  background-color: black; }
 
 /*  Header and navigation******************************************************/
+a {
+  text-decoration: none; }
+
 .logo-link {
   display: flex;
   align-items: center;
@@ -5568,17 +5565,13 @@ footer {
   width: 32px;
   height: auto; }
 
-.navbar-brand > .navbar-nav > .nav-item > .nav-link > li > a {
-  color: #62e5d2;
-  text-decoration: none; }
-
 .navbar-toggler button {
-  color: #62e5d2; }
+  color: white; }
 
-nav-item a:hover,
-nav-item a:focus {
+.nav-item a:hover,
+.nav-item a:focus {
   background-color: #575757;
-  color: #62e5d2;
+  color: white;
   text-decoration: none; }
 
 div.jumbotron.jumbotron-fluid {
@@ -5586,17 +5579,14 @@ div.jumbotron.jumbotron-fluid {
   padding-right: 1rem;
   padding-bottom: 16vw;
   padding-left: 1rem;
-  background-image: url("../img/car.jpg");
-  width: 100%;
+  background-image: url("../img/bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: repeat;
-  border: 10px solid #fff;
-  transition: 3s; }
+  transition: 0.5s; }
 
 div.jumbotron.jumbotron-fluid:hover {
-  border-radius: 98%;
-  transition: 0.5s; }
+  border-radius: 99%; }
 
 .section-main > .container-fluid >
 .jumbotron.jumbotron-fluid >
@@ -5610,7 +5600,7 @@ div.jumbotron.jumbotron-fluid:hover {
 .section-main > .container-fluid >
 .jumbotron.jumbotron-fluid >
 .container > .display-4 a {
-  color: #62e5d2;
+  color: black;
   text-decoration: none;
   text-align: center; }
 
@@ -5637,7 +5627,7 @@ section.claim {
   font-size: 1.5rem; }
 
 section.claim div.grow:hover {
-  background: #62e5d2;
+  background: black;
   transform: scale(1.3); }
 
 section.claim >
@@ -5714,7 +5704,7 @@ div.col-md p {
 .progbar {
   width: 100%;
   padding: 5px;
-  background-color: #3faf9d;
+  background-color: black;
   transition: 1.5s ease; }
 
 .bar {
@@ -5746,7 +5736,7 @@ div.col-md p {
 /*-------portfolio----*/
 .portfolio {
   padding-top: 40px;
-  background-color: #575757; }
+  background-color: black; }
 
 .portfolio h2 {
   color: #d6d6d6;
@@ -5756,7 +5746,7 @@ div.col-md p {
 
 .portfolio > .card-img-top img {
   padding: 1px;
-  background-color: #54bd8f; }
+  background-color: black; }
 
 /*  About me section
 ******************************************************/
@@ -5783,7 +5773,7 @@ div.about-image {
   width: 300px;
   height: auto;
   max-width: 100%;
-  border: 5px solid #3faf9d;
+  border: 5px solid black;
   transition: 1s; }
 
 .about > .about-image >
@@ -5806,7 +5796,7 @@ rotate img:hover {
 
 /*-------Contact-----*/
 .contactme {
-  background-color: #575757;
+  background-color: black;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px; }
@@ -5898,50 +5888,11 @@ rotate img:hover {
   content: '*'; }
 
 /*--------------social media footer-----------*/
-.footer {
-  background-color: blue;
-  padding: 70px 0px; }
-
-.footer p {
-  color: #3faf9d;
+footer {
   text-align: center;
-  font-size: 16px; }
-
-footer ul li {
-  padding: 5px 0px; }
-
-.address span,
-.contact span,
-.social span {
+  font-size: .5rem;
   color: black;
-  font-weight: 800;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  display: block;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 3px; }
-
-.address li p,
-.contact li a,
-.social li a {
-  color: black;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-size: 15px; }
-
-.social li {
-  float: left; }
-
-.address,
-.contact,
-.social {
-  list-style: none; }
-
-.fa {
-  color: blue;
-  margin-right: 15px;
-  font-size: 14px; }
+  background-color: white; }
 
 /*  Utilities
 ******************************************************/
@@ -5965,8 +5916,6 @@ footer ul li {
 
 /* Only display content to screen readers
 Taken from Bootstrap 4: https://github.com/twbs/bootstrap/blob/v4-dev/scss/mixins/_screen-reader.scss
-See: http://a11yproject.com/posts/how-to-hide-content/
-See: https://hugogiraudel.com/2016/10/13/css-hide-and-seek/
 */
 .sr-only {
   position: absolute;

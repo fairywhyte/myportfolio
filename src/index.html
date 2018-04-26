@@ -10,18 +10,20 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
   rel="stylesheet"  type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
-
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.appear.js"></script>
+    <script src="./js/progbar.js"></script>
 
 
     <title>My Portfolio</title>
 </head>
 
 <body>
+    <header>
     <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
-
     <!--Header-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="#home">
             <img src="img/icon.png" width="60" height="60" alt="" alt="My portfolio">
         </a>
 
@@ -34,29 +36,24 @@
             <div class="container">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">
-                            <i class="fas fa-home fa-fw" style="background: #62e5d2"></i>Home
+                        <a class="nav-link" href="#home">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">
-                            <i class="fas fa-cog" style="background: #62e5d2"></i>Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                         <span class="sr-only">(current)</span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <i class="fas fa-address-card" style="background: #62e5d2"></i>Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                         <span class="sr-only">(current)</span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutme">
-                            <i class="fas fa-comment-alt" style="background: #62e5d2"></i>About me</a>
+                        <a class="nav-link" href="#aboutme">About me</a>
                         <span class="sr-only">(current)</span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <i class="fas fa-envelope" style="background: #62e5d2"></i>Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                         <span class="sr-only">(current)</span>
                     </li>
                 </ul>
@@ -79,6 +76,7 @@
                 </div>
             </div>
         </section>
+        </main>
 </header>
         <!--HEADER Ends here-->
 
@@ -99,7 +97,7 @@
             <div class="row">
                 <div class="col-md">
                     <article>
-                        <div style="font-size:4em; color: #62e5d2">
+                        <div style="font-size:4em">
                             <i class="fas fa-crosshairs fa-pulse"></i>
                         </div>
                         <h2>Discover</h2>
@@ -111,7 +109,7 @@
 
                 <div class="col-md">
                     <article>
-                        <div style="font-size:4em; color: #62e5d2">
+                        <div style="font-size:4em">
                             <i class="fas fa-spinner fa-pulse"></i>
                         </div>
                         <h2>Design</h2>
@@ -122,7 +120,7 @@
                 </div>
                 <div class="col-md">
                     <article>
-                        <div style="font-size:4em; color: #62e5d2">
+                        <div style="font-size:4em;">
                             <i class="fas fa-code fa-pulse"></i>
                         </div>
                         <h2>Deploy</h2>
@@ -131,7 +129,7 @@
                 </div>
                 <div class="col-md">
                     <article>
-                        <div style="font-size:4em; color: #62e5d2">
+                        <div style="font-size:4em;">
                             <i class="fas fa-cog fa-spin"></i>
                         </div>
                         <h2>Be Ready</h2>
@@ -204,9 +202,7 @@
             </div>
     </section>
     <!-- JS script -->
-        <script src="./js/jquery-3.3.1.min.js"></script>
-        <script src="./js/jquery.appear.js"></script>
-        <script src="./js/progbar.js"></script>
+
         <script>
             $('.progbar').appear();
 
@@ -233,7 +229,7 @@
                     <h2>My Portfolio</h2>
                     <div class="row">
                         <div class="col-sm-6 col-md-4 col-lg-6">
-                            <article class="card mb-4 rotate">
+                            <article class="card mb-4">
                                 <img class="card-img-top" src="img/counter.jpg" width="120">
                                 <div class="card-body">
                                     <h3 class="card-title">Generic Hipster Coffee</h3>
@@ -253,15 +249,15 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-6">
                             <article class="card mb-4">
-                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <img class="card-img-top" src="img/moviewebsite.png" width="120">
                                 <div class="card-body">
-                                    <h3 class="card-title">Hackaton Project#2</h3>
-                                    <p class="card-text">Description of hackathon project #2.</p>
+                                    <h3 class="card-title">A Movie Website</h3>
+                                    <p class="card-text">It's a movie website where a user can make an online booking</p>
                                     <h4>Tech stack:</h4>
                                     <ul class="unstyled">
                                         <li class="badge badge-secondary"> HTML</li>
                                         <li class="badge badge-secondary"> CSS</li>
-                                        <li class="badge badge-secondary"> Javascript</li>
+                                        <li class="badge badge-secondary"> PHP</li>
                                         <li class="badge badge-secondary"> Bootstrap</li>
                                         <li class="badge badge-secondary"> SCSS</li>
                                     </ul>
@@ -289,10 +285,29 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-6">
                             <article class="card mb-4">
-                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <img class="card-img-top" src="img/votingapp.png" width="120">
                                 <div class="card-body">
-                                    <h3 class="card-title">Hackaton Project#4</h3>
-                                    <p class="card-text">Description of hackathon project #4.</p>
+                                    <h3 class="card-title">A Voting App</h3>
+                                    <p class="card-text">An application where user can create a new poll, view and submit the vote</p>
+                                    <h4>
+                                        <strong>Tech stack:</strong>
+                                    </h4>
+                                    <ul class="unstyled">
+                                        <li class="badge badge-secondary"> HTML/CSS</li>
+                                        <li class="badge badge-secondary"> Bootstrap</li>
+                                        <li class="badge badge-secondary"> Laravel</li>
+                                        <li class="badge badge-secondary"> PHP</li>
+                                        <li class="badge badge-secondary">MySQL</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-6">
+                            <article class="card mb-4">
+                                <img class="card-img-top" src="img/blackjack.png" width="120">
+                                <div class="card-body">
+                                    <h3 class="card-title">Black Jack Game</h3>
+                                    <p class="card-text">An online black jack game in javascript for second hackaton</p>
                                     <h4>
                                         <strong>Tech stack:</strong>
                                     </h4>
@@ -308,26 +323,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-6">
                             <article class="card mb-4">
-                                <img class="card-img-top" src="img/counter.jpg" width="120">
-                                <div class="card-body">
-                                    <h3 class="card-title">Final Project</h3>
-                                    <p class="card-text">Description of the final project.</p>
-                                    <h4>
-                                        <strong>Tech stack:</strong>
-                                    </h4>
-                                    <ul class="unstyled">
-                                        <li class="badge badge-secondary"> HTML</li>
-                                        <li class="badge badge-secondary"> CSS</li>
-                                        <li class="badge badge-secondary"> Javascript</li>
-                                        <li class="badge badge-secondary"> Bootstrap</li>
-                                        <li class="badge badge-secondary"> SCSS</li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-6">
-                            <article class="card mb-4">
-                                <img class="card-img-top" src="img/counter.jpg" width="120">
+                                <img class="card-img-top" src="img/LaRavelle.png" width="120">
                                 <div class="card-body border">
                                     <h3 class="card-title">Explore</h3>
                                     <p class="card-text">Description of your Final Project. Description of your Final Project, including the tech
@@ -371,7 +367,7 @@
             <p>I have worked for clients all across the world but currently I am based in Aberdeen,Scotland, United
                 Kingdom.
             </p>
-            <p>I like cats, gaming, and snowboarding. If I do not develop, you can also meet me trekking in the
+            <p>I like cats, cooking, biking and playing golf. If I do not develop, you can also meet me hill walking in the
                 mountains.</p>
             <strong>Get in touch and let's do something great together.</strong>
             <br/>
@@ -388,14 +384,14 @@
              <!-- <i class="fas fa-binoculars"></i> -->
             <h2>Find Me Here</h2>
         <span><a href="https://twitter.com/fadzilove/" target="_blank">Twitter
-            <i class="fa fa-twitter-square fa-5x" style="color: #62e5d2"></i></a></span>
+            <i class="fa fa-twitter-square fa-5x"></i></a></span>
         <span>
             <a href="https://www.linkedin.com/in/fadzilahwhyte/" target="_blank">LinkedIn
-            <i class="fa fa-linkedin-square fa-5x" style="color: #62e5d2"></i></a>
+            <i class="fa fa-linkedin-square fa-5x"></i></a>
             </span>
         <span>
             <a href="https://github.com/fairywhyte" target="_blank">GitHub
-            <i class="fa fa-github" style="color: #62e5d2"></i></a>
+            <i class="fa fa-github fa-5x"></i></a>
         </span>
     </section>
 </div>
@@ -418,8 +414,8 @@
 
                             </div>
                             <div class="form-group form_left">
-                                <input type="email" class="form-control" id="email" name="email" required>
-                                <?php $value = $_POST['email'];?>
+                                <input type="email" class="form-control" id="email" name="email" required/>
+                                 <?php  $value = $_POST['email'];?>
                             </div>
                             <div class="form-group">
                                 <input type="number" class="form-control" id="phone" name="phone" value="" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
