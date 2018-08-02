@@ -7,10 +7,10 @@ function progress(barID, value) {
 }
 
 $('.progbar').on('appear', function () {
-    progress('#bar1', '50%');
-    progress('#bar2', '60%');
-    progress('#bar3', '90%');
-    progress('#bar4', '50%');
-    progress('#bar5', '50%');
-    progress('#bar6', '50%');
+    progress('#bar1', '80%');
+    progress('#bar2', '80%');
+    progress('#bar3', '60%');
+    progress('#bar4', '70%');
+    progress('#bar5', '70%');
+    progress('#bar6', '70%');
 });

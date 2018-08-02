@@ -51,7 +51,7 @@ gulp.task('build', ['css:compile', 'html:copy', 'static:copy', 'js:copy']);
 gulp.task('develop', ['build'], function() {
 	gulp.watch('src/scss/*', ['css:compile']); // watch for changes in SCSS
 	gulp.watch('src/**/*.html', ['html:copy']); // watch for changes in HTML
-	gulp.watch('src/img/**/*', ['static:copy']); // watch for changes in static files
+	gulp.watch('src/img/**/*', ['img:copy']); // watch for changes in static files
 	gulp.watch('src/js/**/*', ['js:copy']); // watch for changes in javascript files
 });
 

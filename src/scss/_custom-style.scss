@@ -12,31 +12,38 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Andada', sans-serif;
+    font-family: 'Basic', sans-serif;
     font-size: 16px;
 }
 
 .section,
 footer {
-    padding: 3vw 6vw;
-    font-family: 'Andada', sans-serif;
+    padding: 3vw 3vw;
+    font-family: 'Basic', sans-serif;
 }
 
-
-
 .section {
-    background-color: #575757;
-    color: white;
+    background-color: #C4C4C4;
+    color: #E6E6E6;
 }
 
 .section-darkgrey {
-    background-color: #575757;
+    background-color: #C4C4C4;
 }
 
 /*  Header and navigation******************************************************/
-a{
+
+a {
     text-decoration: none;
+    color:#47834B;
 }
+
+.navbar-nav>.nav-item> a{
+    color:#47834B;
+
+}
+
+
 .logo-link {
     display: flex;
     align-items: center;
@@ -51,61 +58,47 @@ a{
 }
 
 .navbar-toggler button {
-    color: white;
+    color: #47834B  ;
 }
 
 .nav-item a:hover,
 .nav-item a:focus {
-    background-color: #575757;
+    background-color: #C4C4C4;
     color: white;
     text-decoration: none;
 }
 
-
 div.jumbotron.jumbotron-fluid {
-
-    padding-top: 16vw;
-    padding-right: 1rem;
-    padding-bottom: 16vw;
-    padding-left: 1rem;
-    background-image: url('../img/bg.jpg');
-
+    padding-top: 24vw;
+    padding-bottom: 24vw;
+    background-image: url('../img/demoday.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: repeat;
-    transition:0.5s;
-}
-div.jumbotron.jumbotron-fluid:hover{
-    border-radius:99%;
+    margin:0;
 }
 
-.section-main>.container-fluid>
-.jumbotron.jumbotron-fluid>
-.container >h1{
-    color: #fff;
+div .container-fluid{
+    padding:0;
+    margin:0;
+}
+
+span.display-4
+ {
+    color:#136025;
+    font-weight:bold;
     font-size: 2.5rem;
     text-align: center;
     text-decoration: none;
-    text-align: center;
-}
-.section-main>.container-fluid>
-.jumbotron.jumbotron-fluid>
-.container>.display-4 a {
-    color: #fca46e;
-    text-decoration: none;
-    text-align: center;
+
 }
 
-.section-main>.container-fluid>
-.jumbotron.jumbotron-fluid>
-.container>.display-4 a:hover {
-    background: #fff;
-}
-
-.section-main>.container-fluid .jumbotron.jumbotron-fluid>.container>p {
-    color:#fff;
+.section>.container-fluid .jumbotron.jumbotron-fluid>.container>p {
+    color: yellow;
     font-size: 2.5rem;
     text-align: center;
+    padding-top:20px;
+    margin:0;
 }
 
 @media screen and (max-width: 768px) {
@@ -115,58 +108,48 @@ div.jumbotron.jumbotron-fluid:hover{
     }
 }
 
-/*  Promo----------*/
+/*  claim----------*/
 
-section.claim{
-    background-color: #d6d6d6;
+section.claim {
+    background-color: #47834B;
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 1.5rem;
 }
 
-section.claim
-div.grow:hover{
-    background:#575757;
-    color:#fff;
-    transform:scale(1.3);
-}
 //lets work together..
-section.claim>
-div.container> p {
-    color: #232323;
+section.claim>div.container>p {
+    color: #E6E6E6;
     font-size: 1.5rem;
     text-align: center;
-
 }
 
-.section>.section-darkgrey>
-.section-promo>article>
-div.col-md h2 {
-    background-color: #575757;
-    color: white;
-    font-size: 2rem;
+/*  Promo----------*/
+section.section-promo h2 {
+
+    color: #575757;
+    font-size: 2.5rem;
     padding-top: 5px;
 }
 
-.section>.section-darkgrey>
-.section-promo>article>
-div.col-md p {
-    background-color: #575757;
-    color: white;
+section.section-promo p {
+
+    color: #575757;
     font-size: 1.5rem;
     padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-right :10px;
+padding-left:10px;
 }
 
-.section>
-.section-darkgrey >
-.section-promo {
+section.section-promo {
     position: relative;
     justify-content: space-around;
     margin: 0;
 }
 
+section.section-promo i{
+    color:#47834B;
+}
 @media only screen and (min-width: 500px) {
     .section-promo.col-md {
         width: 50%;
@@ -194,19 +177,20 @@ div.col-md p {
 /*-------------SKILLS----------------*/
 
 .section-skills {
-    background-color: #d6d6d6;
-    color: #232323;
-    font-family: 'Andada', sans-serif;
+    background-color: #47834B;
+    color: #575757;
+    font-family: 'Basic', sans-serif;
     padding-bottom: 40px;
 }
 
 .section-skills h2 {
-    font-family: 'Andada', sans-serif;
-    font-size: 2rem;
-    color: #232323;
+    font-family: 'Basic', sans-serif;
+    font-size: 2.5rem;
+    color: #E6E6E6;
     font-weight: bold;
     text-align: center;
-    padding: 40px 20px 40px 20px;
+     padding-top: 40px;
+     padding-bottom: 20px;
 }
 
 /*************javascript progressbar***********/
@@ -220,7 +204,7 @@ div.col-md p {
 .progbar {
     width: 100%;
     padding: 5px;
-    background-color: black;
+    background-color: darkgrey;
     transition: 1.5s ease;
 }
 
@@ -248,7 +232,7 @@ div.col-md p {
 
 .skill-name {
     position: absolute;
-    left: 250px;
+    left: 230px;
     font-size: 1rem;
     margin-top: 10px;
     color: #d6d6d6;
@@ -258,35 +242,38 @@ div.col-md p {
 
 .portfolio {
     padding-top: 40px;
-    background-color: #575757;
+    background-color: #C4C4C4;
+
 }
 
 .portfolio h2 {
-    color: #d6d6d6;
-    font-family: 'Andada', sans-serif;
+    color: #575757;
+    font-family: 'Basic', sans-serif;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 40px;
 }
 
 .portfolio>.card-img-top img {
     padding: 1px;
-    background-color: black;
+    background-color: #E6E6E6;
 
 }
+
 
 /*  About me section
 ******************************************************/
 
 .about {
-    //padding :40px 100px 30px 90px;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding : 50px 40px 50px 40px;
+    // padding-top: 80px;
+    // padding-bottom: 40px;
     margin: 0; //margin-top:40px;
-    background-color: #d6d6d6;
+    background-color: #47834B;
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Andada';
-    color: #232323;
+    font-family: 'Basic', sans-serif;
+    color: #E6E6E6;
     text-align: center;
 }
 
@@ -295,32 +282,27 @@ div.about-image {
     margin-right: 2rem;
     text-align: center;
     position: relative;
+}
 
-}
-div.about-image h2{
+div.about-image h2 {
     padding-bottom: 2rem;
+    font-size: 2.5rem;
 }
+
 /*photo setting*/
 
 .about>.about-image img {
-    border-radius: 50%;
     width: 300px;
-    height: auto;
     max-width: 100%;
-    border: 5px solid #575757;
-    transition:1s;
+    border: 1px solid #575757;
 }
-.about>.about-image >
-rotate img:hover
-{
-    transform: scale(1.2);
-}
+
 .about-text {
-    text-align: center;
+    text-align: justify;
     flex: 1 0 300px;
     max-width: 100%;
     padding-right: 3rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .about-text button {
@@ -331,46 +313,22 @@ rotate img:hover
     border: 1px solid #232323;
 }
 
-/*-------Contact-----*/
 
-.contactme {
-    background-color: #575757;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.contactme h2 {
-    font-size: 2rem;
-    color: #d6d6d6;
-    text-align: center;
-
-}
-
-.contactme.container .findme a {
-    display: block;
-    padding-bottom: 40px;
-}
-
-.fa{
-    font-size: 40px;
-}
 /*  Contact form
 ******************************************************/
 
 .contact-form {
-    background-color: #d6d6d6;
-    color: black;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #C4C4C4;
+    color: #575757;
+  padding:20px ;
     margin: 0;
 }
 
 .contact-form h3 {
     max-width: 100%;
     padding-top: 40px;
-    padding-bottom: 40px;
-    font-size: 2rem;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -382,6 +340,8 @@ rotate img:hover
 .form-group {
     width: 100%;
     margin-bottom: 1rem;
+
+
 }
 
 .form-group:not(:last-child) {
@@ -394,7 +354,6 @@ rotate img:hover
     .form-group:not(:last-child) {
         width: 50%;
     }
-
 }
 
 .form-group input,
@@ -415,22 +374,21 @@ rotate img:hover
 }
 
 .form-group input:focus {
-    background-color: rgba(255, 255, 255, .3);
+    //background-color: rgba(255, 255, 255, .3);
+    background-color: white;
 }
 
-.form-group textarea,
-    {
-    display: block;
+.form-group textarea
+{ margin-top: .25rem;
+    display: flex;
     width: 100%;
     border-radius: .2em;
-}
+    width:100%;
 
-.form-group textarea {
-    margin-top: .25rem;
 }
 
 .form-group button {
-    background: #232323;
+    background: #878787;
     color: #fff;
     padding-top: 5px;
     margin-top: 5px;
@@ -438,7 +396,7 @@ rotate img:hover
     text-align: center;
     font-size: 1rem;
     width: 100%;
-    display: block;
+
 }
 
 .form-label-required::after {
@@ -449,11 +407,10 @@ rotate img:hover
 
 footer {
     text-align: center;
-    font-size: .5rem;
-    color: black;
-    background-color: white;
+    font-size: 1rem;
+    color: #E6E6E6;
+    background-color: #47834B;
 }
-
 
 /*  Utilities
 ******************************************************/
@@ -493,114 +450,133 @@ Taken from Bootstrap 4: https://github.com/twbs/bootstrap/blob/v4-dev/scss/mixin
     clip-path: inset(50%);
     border: 0;
 }
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles */
-    }
 
-    /* Smartphones (landscape) ----------- */
-    @media only screen and (min-width : 321px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Styles */
-    }
+}
 
-    /* Smartphones (portrait) ----------- */
-    @media only screen and (max-width : 320px) {
-    /* Styles */
-    }
+/* Smartphones (landscape) ----------- */
 
-    /* iPads (portrait and landscape) ----------- */
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width: 321px) {
     /* Styles */
-    }
+}
 
-    /* iPads (landscape) ----------- */
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    /* Styles */
-    }
+/* Smartphones (portrait) ----------- */
 
-    /* iPads (portrait) ----------- */
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (max-width: 320px) {
     /* Styles */
-    }
-    /**********
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
+
+/**********
     iPad 3
     **********/
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    /* Styles */
-    }
 
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     /* Styles */
-    }
-    /* Desktops and laptops ----------- */
-    @media only screen  and (min-width : 1224px) {
-    /* Styles */
-    }
+}
 
-    /* Large screens ----------- */
-    @media only screen  and (min-width : 1824px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
 
-    /* iPhone 4 ----------- */
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    /* Styles */
-    }
+/* Desktops and laptops ----------- */
 
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (min-width: 1224px) {
     /* Styles */
-    }
+}
 
-    /* iPhone 5 ----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-    }
+/* Large screens ----------- */
 
-    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-width: 1824px) {
     /* Styles */
-    }
+}
 
-    /* iPhone 6 ----------- */
-    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-    }
+/* iPhone 4 ----------- */
 
-    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
 
-    /* iPhone 6+ ----------- */
-    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
 
-    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-    }
+/* iPhone 5 ----------- */
 
-    /* Samsung Galaxy S3 ----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
 
-    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
 
-    /* Samsung Galaxy S4 ----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
-    }
+/* iPhone 6 ----------- */
 
-    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
 
-    /* Samsung Galaxy S5 ----------- */
-    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
 
-    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* iPhone 6+ ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
     /* Styles */
-    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}

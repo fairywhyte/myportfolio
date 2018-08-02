@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/jquery.appear.js"></script>
-    <script src="./js/progbar.js"></script>
-
-
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+ <!--Plugins-->
+ <script src="./js/jquery-3.3.1.min.js"></script>
     <title>My Portfolio</title>
 </head>
 
@@ -23,37 +27,37 @@
         <!--Header-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#home">
-                <img src="img/icon.png" width="60" height="60" alt="" alt="My portfolio">
+                <img src="img/icon.png" width="80" height="80" alt="" alt="My portfolio">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            </button>
+
 
             <div class="collapse navbar-collapse navbar-brand" id="navbarSupportedContent">
                 <div class="container">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#home">HOME
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#skills">SKILLS</a>
                             <span class="sr-only">(current)</span>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
                             <span class="sr-only">(current)</span>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutme">About me</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#aboutme">ABOUT ME</a>
                             <span class="sr-only">(current)</span>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">CONTACT</a>
                             <span class="sr-only">(current)</span>
                         </li>
                     </ul>
@@ -62,12 +66,11 @@
         </nav>
         <!--INTRO-->
         <main id="content">
-            <section class="section section-main color">
+            <section class="section">
                 <div class="container-fluid">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1 class="display-4 ">Hi, I am
-                                <a href="mailto:fadzilah.whyte@aol.co.uk">Fadzilah Whyte.</a>
+                            <h1 class="display-4 ">Hi, I am <span>Fadzilah Whyte.</span>
                             </h1>
                             <p class="lead">
                                 I am a Full-Stack Web Developer.
@@ -92,7 +95,7 @@
         </div>
     </section>
 
-    <section class="section section-darkgrey section-promo">
+    <section class="section section-promo">
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -203,7 +206,9 @@
     </section>
     <!-- JS script -->
 
-    <script>
+    <script src="./js/jquery.appear.js"></script>
+    <script src="./js/progbar.js"></script>
+    <!-- <script>
         $('.progbar').appear();
 
         function progress(barID, value) {
@@ -220,7 +225,7 @@
             progress('#bar5', '70%');
             progress('#bar6', '70%');
         });
-    </script>
+    </script> -->
 
     <!--PORTFOLIO-->
     <div class="portfolio">
@@ -356,7 +361,7 @@
             <div class="about-image">
                 <h2>About Me</h2>
                 <div class="rotate">
-                    <img src="./img/fadz.jpg" alt="It's me Fadz Whyte">
+                    <img src="./img/myphoto.jpg" alt="It's me Fadz Whyte">
                 </div>
             </div>
             <div class="about-text">
@@ -379,29 +384,6 @@
         </section>
     </div>
 
-    <!--CONTACT ON SOCIAL MEDIA-->
-    <div class="contactme">
-        <section id="contact">
-            <div class="container findme">
-                <!-- <i class="fas fa-binoculars"></i> -->
-                <h2>Find Me Here</h2>
-                <span>
-                    <a href="https://twitter.com/fadzilove/" target="_blank">Twitter
-                        <i class="fa fa-twitter-square fa-5x"></i>
-                    </a>
-                </span>
-                <span>
-                    <a href="https://www.linkedin.com/in/fadzilahwhyte/" target="_blank">LinkedIn
-                        <i class="fa fa-linkedin-square fa-5x"></i>
-                    </a>
-                </span>
-                <span>
-                    <a href="https://github.com/fairywhyte" target="_blank">GitHub
-                        <i class="fa fa-github fa-5x"></i>
-                    </a>
-                </span>
-        </section>
-        </div>
         <!--CONTACT ME -->
         <section id="contact" class="contact-form">
             <h3>
@@ -411,14 +393,11 @@
             <div class="container">
                 <div class="container form">
                     <form method="post" action="../form.php" method="post" class="form-contact">
-
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="firstname" value=" " placeholder="First Name" required autofocus="">
-
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" id="lastname" name="lastname" value="" placeholder="Last Name" required autofocus="">
-
                         </div>
                         <div class="form-group form_left">
                             <input type="email" class="form-control" id="email" name="email" required/>
@@ -427,7 +406,6 @@
                         <div class="form-group">
                             <input type="number" class="form-control" id="phone" name="phone" value="" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
                                 maxlength="10" placeholder="Mobile No." required>
-
                         </div>
                         <div class="form-group">
                             <textarea class="form-control textarea-contact" rows="8" id="message" name="message" value="" placeholder="Type Your Message/Feedback here..."
@@ -436,21 +414,18 @@
                             <button class="btn btn-send">
                                 <span class="glyphicon glyphicon-send">Send </span>
                             </button>
-
                         </div>
-
-
                     </form>
-
                 </div>
             </div>
         </section>
 
         <!--FOOTER-->
         <footer>
-            <p>Nice to meet you!</p>
-            <p>Copyright @Fadzilah Whyte 2018</p>
+            <p>Copyright @FADZTECH LTD 2018</p>
         </footer>
+
+
 </body>
 
 </html>
